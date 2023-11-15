@@ -9,7 +9,7 @@ class API_Endpoint:
 class API_Builder:
   def build(self, endpoint):
     header = {"token":get_token()}
-    if endpoint == "Get-Health":
+    if endpoint == "/get-health":
       body = {"days_interval": 3}
       return API_Endpoint(endpoint, header, body)
 
