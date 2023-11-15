@@ -14,4 +14,4 @@ class API_Builder:
       return API_Endpoint(endpoint, header, body)
 
 def api_builder(endpoint):
-  return API_Builder(endpoint)
+  return API_Builder().build(endpoint)

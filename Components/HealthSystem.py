@@ -1,4 +1,4 @@
-from ..lib.api_factory.py import api_builder
+from ..lib.core.api_factory import api_builder
 
 def build_health_system():
   get_health = api_builder("/get-health")
